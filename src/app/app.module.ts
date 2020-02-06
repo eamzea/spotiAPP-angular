@@ -9,10 +9,13 @@ import { HomeComponent } from "./components/home/home.component";
 import { SearchComponent } from "./components/search/search.component";
 import { ArtistComponent } from "./components/artist/artist.component";
 import { NavbarComponent } from "./components/shared/navbar/navbar.component";
+import { TarjetasComponent } from "./components/tarjetas/tarjetas.component";
 
 import { ROUTES } from "./app.routes";
 
 import { SpotifyService } from "./services/spotify.service";
+import { NoimagePipe } from "./pipes/noimage.pipe";
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SpotifyService } from "./services/spotify.service";
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
